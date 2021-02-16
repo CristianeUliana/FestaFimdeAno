@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="8dp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="15/02/2021"
+        android:textColor="@color/secundary"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/today"
+        android:layout_marginTop="20dp"
+        android:background="@color/secundary_dark" />
+
+    <TextView
+        android:id="@+id/text_label_days_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/today"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="@string/dias_restantes_para_o_fim_do_ano"
+        android:textColor="@color/secundary_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/days_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_label_days_left"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Teste"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="70sp" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/ic_launcher_background"
+        android:text="NÃO CONFIRMADO" />
+
+
+</RelativeLayout>
